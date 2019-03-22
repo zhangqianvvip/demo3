@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="Bean" class="framwork.bean.Helloworld">
+<property name="id" value="3"/>
+<property name="name" value="Some value"/>
+<constructor-arg type ="String" value="aaaa"></constructor-arg>
+<constructor-arg type ="String" value="aaaal"></constructor-arg>
+</bean>
+<bean id="Bean1" class="framwork.bean.AnotherBean">
+</bean>
+<bean id="lifeBean" class="framwork.bean.AnotherBean" init-method="start"  destroy-method="stop"/>
+</beans>
