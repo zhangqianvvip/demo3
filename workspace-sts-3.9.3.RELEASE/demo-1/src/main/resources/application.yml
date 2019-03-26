@@ -1,0 +1,24 @@
+my:
+ name: Jack
+ age: 133
+ number: ${random.int[100,999]}
+ uuid: ${random.uuid}
+ max: ${random.int(10)} 
+ value: ${random.value}
+ greeting: Hi,I'm ${my.name}
+
+name: osdf
+hello: GOood
+spring: 
+ profiles: 
+ active: prod
+ 
+---
+spring:
+ profiles: goodbye,dev
+ name: Everyone
+
+---
+spring: 
+ profiles: hello
+ name: 法王府
