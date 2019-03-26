@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.context.support.ServletRequestHandledEvent;
 
 @SpringBootApplication
-@ComponentScan({"com.controller","com.example.bean"})
+//@ComponentScan({"com.controller","com.example.bean"})
 public class Demo1Application {
 
 	public static void main(String[] args) {

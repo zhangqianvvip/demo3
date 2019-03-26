@@ -1,13 +1,17 @@
 package framwork.bean;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class AnotherBean {
 	private Helloworld Helloworld;
-	
+	private static final Logger logger = LoggerFactory.getLogger(AnotherBean.class);
+
 	public void start() {
-		System.out.println("start");
+		logger.info("start");
 	}
 	public void stop() {
-		System.out.println("stop");
+		logger.info("stop");
 	}
 	public AnotherBean() {
 	}

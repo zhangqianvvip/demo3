@@ -1,5 +1,7 @@
 package com.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Profile;
@@ -36,8 +38,10 @@ public class controller {
 	public String hellow() {
 		return "";
 	}
+	
 	@RequestMapping("hellow1")
 	public String getMessage() {
+		
 		return this.hello + "" + this.name;
 	}
 }

@@ -4,21 +4,49 @@ my:
  number: ${random.int[100,999]}
  uuid: ${random.uuid}
  max: ${random.int(10)} 
- value: ${random.value}
+ value: ${random.value} 
  greeting: Hi,I'm ${my.name}
+
 
 name: osdf
 hello: GOood
-spring: 
- profiles: 
- active: prod
- 
----
-spring:
- profiles: goodbye,dev
- name: Everyone
+logging: 
+ level: 
+   com: 
+   controller: trace
+#spring: 
+# profiles: 
+# active: prod
 
----
+#management:
+#  security:
+#    enabled: false #关掉安全认证
+#  port: 8888 #管理端口调整成8888
+#  context-path: /abc #actuator的访问路径
+
+#配置安全
+#security:
+#  user:
+#    name: admin 
+#    password: admin
+
+#配置端点
+endpoints:
+  actuator:
+    enabled: true
+  shutdown: 
+    enabled: true
+
+server: 
+  port: 8032
+
 spring: 
- profiles: hello
- name: 法王府
+  boot: 
+    admin: 
+      url: http://localhost:8000
+  application:  
+    admin: 
+      name: spring-boot-admin-client
+management: 
+  security: 
+    enabled: false
