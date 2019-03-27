@@ -62,3 +62,20 @@ Logback:效率更高，适应更多环境，支持SLF4J
 	默认情况下，SpringBoot 将日志输出到控制台
 2，日志级别
 	日志级别从低到高分别为trace<debug<info<warn<
+Spring Boot 默认为INFO
+Spring Boot 应用默认将logback作为日志框架
+Spring Boot 日志—log4j
+多环境日志输出（logback）
+Service层的单元测试
+1，@RunWith(SpringRunnerclass)
+2,  @SpringBootTest
+Controller 层单元测试
+1，MockMvn实现了对Http请求的模拟
+断言assertThat使用
+1，assertThat([value],[matcher statement]);
+单元测试的回滚
+1，@Transactional
+Spring Boot Actuator
+提供了对单个SpringBoot的监控
+SpringBootAdmin其中有两个层，server和client层
+server监控着客户端层，一个服务器层可以监视着多个客户端层。
